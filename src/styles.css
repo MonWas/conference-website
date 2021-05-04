@@ -31,7 +31,8 @@ h3 {
   clear: both;
 }
 
-.group::before {
+.group::before,
+.group::after {
   content: "";
   display: table;
 }
@@ -86,11 +87,11 @@ ul {
   list-style: none;
 }
 
-/*.nav li {
+.nav li {
   display: inline-block;
   margin: 0 10px;
   vertical-align: top;
-}*/
+}
 
 .hero {
   line-height: 44px;
@@ -137,6 +138,11 @@ ul {
   min-width: 960px;
 }
 
+.row-alt {
+  background: #070f4e;
+  padding: 44px 0 22px 0;
+}
+
 .grid,
 .col-1-3 {
   display: grid;
@@ -167,4 +173,16 @@ ul {
 .teaser p {
   color: #2772db;
   margin-bottom: 22px;
+}
+
+.primary-footer {
+  color: #3ab1c8;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
+  font-weight: 400;
 }
